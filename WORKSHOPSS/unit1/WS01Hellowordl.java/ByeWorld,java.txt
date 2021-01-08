@@ -1,0 +1,12 @@
+// Elam Álvarez Bye World
+
+/* 
+some lines of comments
+can be written in this woy
+thanks
+*/
+class HelloWorld 
+    public static void main(string[] args){
+	    System.out.println("Bye World from Elam Álvarez");
+		}
+	}	
