@@ -24,11 +24,11 @@ public class WS04LogicalOperators {
         }
 
         boolean y = x != 10;
-        System.out.println("x != 10 --> " + (y));
-        System.out.println("x == 10 --> " + (x == 12));
-        System.out.println("x = 5 -->   " + (x = 3));
-        System.out.println("x > 5 -->  " + (x > 3));
-        System.out.println("x >= 5 --> " + (x >= 3));
+        System.out.println("x != 12 --> " + (y));
+        System.out.println("x == 12 --> " + (x == 12));
+        System.out.println("x = 3 -->   " + (x = 3));
+        System.out.println("x > 3 -->  " + (x > 3));
+        System.out.println("x >= 3 --> " + (x >= 3));
 
         boolean comparison = false;
         boolean comparison2 = false;
