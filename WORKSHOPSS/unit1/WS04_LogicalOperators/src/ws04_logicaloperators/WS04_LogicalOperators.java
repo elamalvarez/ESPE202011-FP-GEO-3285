@@ -3,27 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ws04.logicaloperators;
+package ws04_logicaloperators;
 
 /**
  *
  * @author SAAVEDRA
  */
-public class WS04LogicalOperators {
+public class WS04_LogicalOperators {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int x = 12;
+         int x = 12;
         if (x != 12) {
             System.out.println("x is equals to 12");
         } else {
             System.out.println("x is NOT equal to 12");
         }
 
-        boolean y = x != 10;
+        boolean y = x != 12;
         System.out.println("x != 12 --> " + (y));
         System.out.println("x == 12 --> " + (x == 12));
         System.out.println("x = 3 -->   " + (x = 3));
@@ -72,4 +72,7 @@ public class WS04LogicalOperators {
         System.out.println(" ( " + p + " ^ " + q + " ) " + (p && q));
     }
     
-}
+
+    }
+    
+
