@@ -9,12 +9,12 @@ package hw.areadecanchaprofesional.pkgint;
  *
  * @author SAAVEDRA
  */
-public class HWAreadecanchaprofesionalInt {
+             public class HWAreadecanchaprofesionalInt {
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         // TODO code application logic here
         int area;
         int longer;
@@ -23,7 +23,7 @@ public class HWAreadecanchaprofesionalInt {
         longer = 110;
         width = 69;
         
-        // operetion
+        // operation
         
         area = longer * width;
         
