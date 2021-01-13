@@ -49,7 +49,7 @@ public class WS05Iterations {
         int table=8;
         for ( int j=1; j<= top; j++){
             product= table *j ;
-            System.out.println("6 * " +j+ "=" + product);
+            System.out.println("8 * " +j+ "=" + product);
         }
         
     }
