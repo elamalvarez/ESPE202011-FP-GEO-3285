@@ -15,6 +15,7 @@ public class WS10Functions {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("-- ELAM ÁLVAREZ --");
         int divd=5;
         int divr=10;
         float qoutient=0;
