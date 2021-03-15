@@ -22,7 +22,7 @@ public class AlvarezEQ11 {
         Scanner ent = new Scanner (System.in);
         for (int i=0; i < 5; i++){
             
-            System.out.println("Enter to " + i + " number: ");
+            System.out.println("Enter to Kwh " + i + " number: ");
             array[i] = ent.nextInt();
             suma += array[i];
         }
