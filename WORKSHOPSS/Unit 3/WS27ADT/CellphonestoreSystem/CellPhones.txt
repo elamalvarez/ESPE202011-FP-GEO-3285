@@ -1,0 +1,4 @@
+
+Samsung J7 , Blue , 2017 , Samsung , true
+Huawei mate 20 , White , 2018 , Huawei , true
+Huawi P 20 , Black , 2014 , Huawei , false

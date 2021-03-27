@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ws11;
+package javaapplication58;
 
 import java.util.Arrays;
 
@@ -11,14 +11,14 @@ import java.util.Arrays;
  *
  * @author SAAVEDRA
  */
-public class WS11 {
+public class JavaApplication58 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         int num[]={75,2,44,56,66,83,90,23,66};
+          int num[]={75,2,44,56,66,83,90,23,66};
         int posicion, buscar=83;
  
         // Buscamos la posicion del primer valor
@@ -34,4 +34,7 @@ public class WS11 {
         System.out.println("Array ordenado. Encontrado en el indice: "+posicion);
     }
 }
+    
+    
+
 
