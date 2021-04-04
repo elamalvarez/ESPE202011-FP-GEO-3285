@@ -43,6 +43,9 @@ public class FrmCellPhone extends javax.swing.JFrame {
         txtYearOfCreation = new javax.swing.JTextField();
         cmbIsTactile = new javax.swing.JComboBox<>();
         btnSave = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtAreaCell = new javax.swing.JTextArea();
+        btnRead = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,6 +76,17 @@ public class FrmCellPhone extends javax.swing.JFrame {
             }
         });
 
+        txtAreaCell.setColumns(20);
+        txtAreaCell.setRows(5);
+        jScrollPane1.setViewportView(txtAreaCell);
+
+        btnRead.setText("READ");
+        btnRead.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReadActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -97,9 +111,15 @@ public class FrmCellPhone extends javax.swing.JFrame {
                                 .addComponent(cmbColor, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(txtYearOfCreation))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(btnSave)))
-                .addContainerGap(137, Short.MAX_VALUE))
+                        .addGap(23, 23, 23)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(33, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(52, 52, 52)
+                .addComponent(btnSave)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnRead)
+                .addGap(108, 108, 108))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -126,8 +146,12 @@ public class FrmCellPhone extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(cmbIsTactile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
-                .addComponent(btnSave)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSave)
+                    .addComponent(btnRead))
                 .addGap(22, 22, 22))
         );
 
@@ -155,9 +179,14 @@ public class FrmCellPhone extends javax.swing.JFrame {
         
         CellPhoneController.save(CellPhone);
         
-        JOptionPane.showMessageDialog(rootPane, CellPhone.getMark());
+        JOptionPane.showMessageDialog(rootPane, CellPhone.getColor());
         
     }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void btnReadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReadActionPerformed
+                CellPhoneController CellPhoneController = new CellPhoneController();
+                txtAreaCell.setText(CellPhoneController.read());
+    }//GEN-LAST:event_btnReadActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,6 +224,7 @@ public class FrmCellPhone extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnRead;
     private javax.swing.JButton btnSave;
     private javax.swing.JComboBox<String> cmbColor;
     private javax.swing.JComboBox<String> cmbIsTactile;
@@ -206,6 +236,8 @@ public class FrmCellPhone extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea txtAreaCell;
     private javax.swing.JTextField txtYearOfCreation;
     // End of variables declaration//GEN-END:variables
 }

@@ -14,7 +14,12 @@ import utils.FileManager;
  */
 public class CellPhoneController {
     public void save (CellPhone CellPhone){
-        String data= CellPhone.getMark()+ " , " + CellPhone.getModel() + " , " + CellPhone.getYearCreation()+ " , " + CellPhone.getColor() + " , " + CellPhone.isIsTactile();
+        String data= CellPhone.getMark()+ " ; " + CellPhone.getModel() + " ; " + CellPhone.getYearCreation()+ " ; " + CellPhone.getColor() + " ; " + CellPhone.isIsTactile();
         FileManager.save(data , "CellPhones");
+    }
+    public String read (){
+        String data;
+        data= FileManager.read("CellPhones");
+        return data;
     }
 }

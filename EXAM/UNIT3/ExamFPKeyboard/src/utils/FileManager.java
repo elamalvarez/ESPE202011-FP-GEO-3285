@@ -14,8 +14,6 @@ import java.io.IOException;
  * @author SAAVEDRA
  */
 public class FileManager {
-    
-
     public static boolean createFile(String fileName) {
         boolean created = false;
         try {
@@ -61,7 +59,7 @@ public class FileManager {
         
        
         
-        return " HUAWEI, HUAWEI MATE 20 LITE, BLACK, 2017, TRUE ";
+        return " Black, Microsoft Sculpt Ergonomic, Big, 2015, True ";
     }
 }
 
